@@ -11,18 +11,6 @@
       "title": "Freelance Work",
       "amount": 12000,
       "date": "2026-05-12"
-    },
-    {
-      "title": "s",
-      "amount": 3,
-      "date": "2026-05-14T17:40:16.711Z",
-      "id": "cvwB9epfT8Y"
-    },
-    {
-      "title": "sss",
-      "amount": 3,
-      "date": "2026-05-14T17:40:16.711Z",
-      "id": "uQzgFM4Vhok"
     }
   ],
   "expenses": [
@@ -39,20 +27,6 @@
       "amount": 3000,
       "category": "Bills",
       "date": "2026-05-14"
-    },
-    {
-      "id": "iAE44lrFmD4",
-      "title": "sssss",
-      "amount": 5,
-      "category": "ssss",
-      "date": "2026-05-14T17:38:38.994Z"
-    },
-    {
-      "id": "A8K2iuNb6Y0",
-      "title": "hghghghghghghghg",
-      "amount": 6,
-      "category": "hjhjhhhjhjj",
-      "date": "2026-05-14T17:52:24.564Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
