@@ -1,4 +1,7 @@
 import { usedtate } from 'react'
+import header from './header'
+
+<header />
 
 function expensesForm({ addExpense }) {
     const [expense, setExpense] = useState({

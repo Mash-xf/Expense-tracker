@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import header from './header'
+
+<header />
 
 function incomForm({ addIncome }) {
     const [income, setIncome] = useState({
