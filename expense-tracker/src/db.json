@@ -1,0 +1,29 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "title": "Salary",
+      "amount": 50000,
+    },
+    {
+      "id": 2,
+      "title": "Freelance Work",
+      "amount": 12000,
+    }
+  ],
+
+  "expenses": [
+    {
+      "id": 1,
+      "title": "Food",
+      "amount": 1500,
+      "category": "Meals"
+    },
+    {
+      "id": 2,
+      "title": "Internet",
+      "amount": 3000,
+      "category": "Bills"
+    }
+  ]
+}
