@@ -1,14 +1,16 @@
 {
-  "transactions": [
+  "income": [
     {
       "id": 1,
       "title": "Salary",
       "amount": 50000,
+      "date": "2026-05-13"
     },
     {
       "id": 2,
       "title": "Freelance Work",
       "amount": 12000,
+      "date": "2026-05-12"
     }
   ],
 
@@ -17,13 +19,15 @@
       "id": 1,
       "title": "Food",
       "amount": 1500,
-      "category": "Meals"
+      "category": "Meals",
+      "date": "2026-05-13"
     },
     {
       "id": 2,
       "title": "Internet",
       "amount": 3000,
-      "category": "Bills"
+      "category": "Bills",
+      "date": "2026-05-14"
     }
   ]
 }
