@@ -1,10 +1,15 @@
-import { usedtate } from 'react'
-import header from './header'
+import { Show } from "@clerk/react";
+import { useState } from "react";
+import { useNavigate } from "react-router";
 
-<header />
 
-function expensesForm({ addExpense }) {
-    const [expense, setExpense] = useState({
+
+function ExpensesForm(   { expenses,
+    setExpenses,
+    income,
+    setIncome, }) {
+        let navigate = useNavigate();
+        const [expense, setExpense] = useState({
         id: '',
         title: '',
         amount: 0,
@@ -39,7 +44,7 @@ function expensesForm({ addExpense }) {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(expenseData),
-            }); c
+            });
 
             if (!response.ok) {
                 throw new Error("Failed to add the transaction");
@@ -47,8 +52,8 @@ function expensesForm({ addExpense }) {
 
             const data = await response.json();
 
-
-            addExpense(expense)
+setExpenses(prev=> [...prev, data])
+navigate('/')
             setExpense({
                 id: '',
                 title: '',
@@ -63,6 +68,8 @@ function expensesForm({ addExpense }) {
     };
     return (
         <div className='expense-form'>
+                            <Show when="signed-in">
+    
             <form onSubmit={handleSubmit}>
                 <label htmlFor="title">Title</label>
                 <input type="text" name="title" placeholder='Title' value={expense.title} onChange={handleChange} />
@@ -74,11 +81,12 @@ function expensesForm({ addExpense }) {
                 <input type="date" name="date" placeholder='Date' value={expense.date} onChange={handleChange} />
             </form>
 
-            <button type='submit' className="button">Add Expense</button>
+            <button onClick={handleSubmit} type='submit' className="button">Add Expense</button>
+                </Show>
 
         </div>
     )
 
 }
 
-export default expensesForm;
+export default ExpensesForm;
